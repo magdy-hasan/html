@@ -1,0 +1,23 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <script>
+            var all = ["a", "b", "c", "D", "d", "asd", "a2", "b3", "4c", "asdD", "fad", "as12d"];
+            var i = 0;
+            function add() {
+                for (var j = 0; j < 2 && i < all.length; j++, i++) {
+                    document.getElementById("main").innerHTML += all[i] + "</br>";
+                }
+            }
+        </script>
+    </head>
+    <body onload="add()">
+
+        <h1>hi</h1>
+        <div id="main">
+
+        </div>
+        <div onclick="add()"><h1>click mee to add more</h1></div>
+
+    </body>
+    </html>
